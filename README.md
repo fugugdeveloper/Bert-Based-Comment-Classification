@@ -2,7 +2,7 @@
 
 This project demonstrates how to use the BERT (Bidirectional Encoder Representations from Transformers) model for classifying comments. It is designed to identify and categorize user comments based on their semantic content—useful for detecting spam, abuse, sentiment, or topic relevance in forums, customer feedback, or online platforms.
 
-# Features
+## Features
 
 Fine-tuning of a pretrained BERT model (bert-base-uncased) for text classification tasks
 
@@ -12,51 +12,51 @@ Training with GPU support and performance tracking via accuracy and loss metrics
 
 Evaluation with classification report and confusion matrix for detailed insight
 
-# 📁 Project Structure
+## 📁 Project Structure
 
-# 📆comment-classification-bert
- # ├ 📋comment_classification_task.ipynb
- # ├ 📋README.md
- # ┗ 📂data/ (optional)
+### 📆comment-classification-bert
+ #### ├ 📋comment_classification_task.ipynb
+ #### ├ 📋README.md
+ #### ┗ 📂data/ (optional)
 
-# 🚀 How to Run
+## 🚀 How to Run
 
-# 1. Clone the Repository
+### 1. Clone the Repository
 
 git clone https://github.com/yourusername/comment-classification-bert.git
 cd comment-classification-bert
 
-# 2. Install Dependencies
+### 2. Install Dependencies
 
 pip install -r requirements.txt
 
-# You can also install manually:
+### You can also install manually:
 
 pip install torch transformers datasets scikit-learn matplotlib seaborn
 
-# 3. Run the Notebook
+### 3. Run the Notebook
 
 Launch the notebook in Jupyter or any compatible IDE:
 
 jupyter notebook comment_classification_task.ipynb
 
-# 🧪 Dataset
+## 🧪 Dataset
 
 The dataset used consists of labeled user comments. Each comment is associated with a category label. The supported labels in this project are:
 
-# toxic
+#### toxic
 
-# severe_toxic
+#### severe_toxic
 
-# obscene
+#### obscene
 
-# threat
+#### threat
 
-# insult
+#### insult
 
-# identity_hate
+#### identity_hate
 
-# non-toxic
+#### non-toxic
 
 You may customize the notebook to load your own dataset in CSV or JSON format with the following structure:
 
@@ -64,7 +64,7 @@ comment,text,label
 1,"This is a great product!",non-toxic
 2,"You are terrible!",toxic
 
-# 🧠 Model Details
+## 🧠 Model Details
 
 Model: bert-base-uncased (Hugging Face Transformers)
 
@@ -76,7 +76,7 @@ Loss Function: CrossEntropyLoss
 
 Evaluation: Accuracy, Confusion Matrix, Precision/Recall/F1
 
-# 📊 Results
+## 📊 Results
 
 After training, the model is evaluated on a test set, and results include:
 
@@ -86,11 +86,11 @@ Confusion matrix (visualized using seaborn)
 
 Classification report with precision, recall, and F1-score
 
-# 📈 Visualization
+## 📈 Visualization
 
 The notebook includes plots of training and validation loss, and confusion matrix for better interpretability.
 
-# 🛠️ Customization
+## 🛠️ Customization
 
 Replace dataset with your own comment data
 
